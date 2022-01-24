@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attri Fitness</title>
+    <style>
+        /* CSS reset */
+        body {
+            color:white;
+            padding: 0px;
+            margin: 0px;
+            background: url('img/Planet9_3840x2160.jpg');
+            font-family: sans-serif;
+        }
+        .left {
+            display:inline-block;
+            position: absolute;
+            left: 22px;
+            top: 20px;
+        }
+        .mid {
+            margin: 20px auto;
+            display: block;
+            width: 33%;
+            top:20px;
+        }
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 22px;
+            top: 20px;
+        }
+        .navbar {
+            display: inline-block;
+        }
+        .navbar li {
+            display: inline-block;
+            
+        }
+        .navbar li a {
+            color: #eeb9b9;
+            text-decoration: none;
+            padding: 13px 13px;
+            font-family: sans-serif;
+
+        }
+        /* a.active means if its the current page opened in browser inside navbar */
+        .navbar li a:hover, .navbar li a.active {
+            color: red;
+            text-decoration: underline;
+        } 
+        .left img {
+            width: 86px;
+        }
+        .left div {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #ff722f;
+        }
+        .btn {
+            font-family: sans-serif;
+            background-color: rgb(238, 183, 183);
+            color: black;
+            margin: -1px 3px;
+            padding: 3px 5px;
+            font-weight: bold;
+            border-radius: 7px;
+            cursor: pointer /*makes cursor turn to pointer if placed on the button*/
+        }
+        .btn:hover {
+            background-color: grey;
+        }
+        .container {
+            position:relative;
+            width: 33%;
+            height: 289px;
+            left: 30px;
+            margin: 49px 27px;
+            padding: 25px 28px;
+        }
+        .container button:hover {
+            background-color: red;
+        }
+        .container button {
+            position:relative;
+            left: 20px;
+            margin: 11px 18px;
+        }
+        .yourname {
+            display: inline;
+            color: cyan;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .youremail {
+            display: inline;
+            color: cyan;
+            font-family: Arial, Helvetica, sans-serif;   
+        }
+        .yourage {
+            display: inline;
+            color: cyan;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container h1 {
+            color: #f6cc90;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/image_processing20201221-9787-1uhoehx.jpg">
+            <div>Attri Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in chandigarh</h1>
+        <form action="noaction.php">
+            <div>
+                <div class="yourname"><label for="name">Your Name</label></div>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <div class="youremail"><label for="email">Your Email</label></div>
+                <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+                <div class="yourage"><label for="age">Your Age</label></div>
+                <input type="text" name="age" id="age" placeholder="Enter your Age"><br>
+                <p>Gender</p><input type="radio" id="male" name="gender" value="male">
+                <label for="gender">Male</label>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="gender">Female</label>
+                
+                
+                
+            </div>
+            <div><button>Submit</button></div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
